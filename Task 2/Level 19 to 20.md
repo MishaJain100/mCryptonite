@@ -47,7 +47,7 @@ Use the cat command as bandit20 to display the password stored in the /etc/bandi
 
 <center>
 
-![Alt text](<Pictures/Password Retrieval - Level 19.png>)
+![](<Pictures/Password Retrieval - Level 19.png>)
 
 </center>
 

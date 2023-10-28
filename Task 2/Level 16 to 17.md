@@ -34,7 +34,7 @@ Use the password obtained from Level 15, which is JQttfApK4SeyHwDlI9SXGR50qclOAi
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 16.png>)
+![](<Pictures/Exploitation - Level 16.png>)
 
 </center>
 

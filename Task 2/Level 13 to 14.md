@@ -32,7 +32,7 @@ Use the password obtained from Level 12, which is wbWdlBxEir4CaE8LaPhauuOo6pwRmr
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 13.png>)
+![](<Pictures/Exploitation - Level 13.png>)
 
 </center>
 
@@ -64,7 +64,7 @@ Use the Level 14 password to gain access.
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 14.png>)
+![](<Pictures/Exploitation - Level 14.png>)
 
 </center>
 

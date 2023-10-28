@@ -32,7 +32,7 @@ Use the password obtained from Level 11, which is JVNBBFSmZwKKOP0XbFXOoW8chDz5yV
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 12.png>)
+![](<Pictures/Exploitation - Level 12.png>)
 
 </center>
 

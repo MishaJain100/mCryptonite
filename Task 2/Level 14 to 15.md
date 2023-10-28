@@ -33,7 +33,7 @@ Use the password obtained from Level 13, which is fGrHPx402xGC7U7rXKDaxiWFTOiF0E
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 14.png>)
+![](<Pictures/Exploitation - Level 14.png>)
 
 </center>
 
@@ -45,7 +45,7 @@ The challenge specifies that the password for Level 15 can be retrieved by submi
 
 <center>
 
-![Alt text](<Pictures/Password Retrieval - Level 14.png>)
+![](<Pictures/Password Retrieval - Level 14.png>)
 
 </center>
 
@@ -59,7 +59,7 @@ Use the Level 15 password to gain access.
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 15.png>)
+![](<Pictures/Exploitation - Level 15.png>)
 
 </center>
 

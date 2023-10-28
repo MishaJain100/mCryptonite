@@ -32,7 +32,7 @@ Use the password obtained from Level 16, which is VwOSWtCA7lRKkTfbr2IDh6awj9RNZM
 
 <center>
 
-![Alt text](<Pictures/Exploitation - Level 17.png>)
+![](<Pictures/Exploitation - Level 17.png>)
 
 </center>
 
