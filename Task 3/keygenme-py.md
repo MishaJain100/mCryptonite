@@ -28,9 +28,9 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Python_Libraries.png)
+![](<Pictures/Keygenme-py - Python_Libraries.png>)
 
-</center>
+</center><br>
 
 - Hashlib:<br> The hashlib library in Python is a standard library module that provides a secure and efficient way to work with various hash functions. Hash functions are algorithms that take an input (or "message") and return a fixed-size string of characters, which is typically a hexadecimal number. Hash functions are commonly used in cryptography, data integrity verification, and various other applications.<br><br>
 - Cryptography.fernet:<br> The cryptography.fernet module in Python is part of the cryptography library, which is a popular and robust library for cryptographic operations. The Fernet class within the cryptography.fernet module is designed for working with the Fernet symmetric key encryption scheme. <br><br>
@@ -40,7 +40,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Username.png)
+![](<Pictures/Keygenme-py - Username.png>)
 
 </center><br>
 
@@ -48,7 +48,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Key.png)
+![](<Pictures/Keygenme-py - Key.png>)
 
 </center><br>
 
@@ -56,7 +56,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Dictionary.png)
+![](<Pictures/Keygenme-py - Dictionary.png>)
 
 </center><br>
 
@@ -64,7 +64,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Menu_Trial.png)
+![](<Pictures/Keygenme-py - Menu_Trial.png>)
 
 </center><br>
 
@@ -72,7 +72,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Initial_Conditions.png)
+![](<Pictures/Keygenme-py - Initial_Conditions.png>)
 
 </center><br>
 
@@ -80,7 +80,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Python_Code.png)
+![](<Pictures/Keygenme-py - Python_Code.png>)
 
 </center><br>
 
@@ -88,7 +88,7 @@ The "keygenme-py" challenge requires reverse engineering a Python program. The g
 
 <center>
 
-![](Pictures/Key_Test.png)
+![](<Pictures/Keygenme-py - Key_Test.png>)
 
 </center><br>
 
