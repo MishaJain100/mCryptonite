@@ -24,7 +24,7 @@ This writeup details the solution to the "Keygenme-py" reverse engineering chall
 The "keygenme-py" challenge requires reverse engineering a Python program. The goal is to understand the logic of the program and generate a valid license key.
 
 <b>Exploitation:</b><br>
-1. Open the provided Python script, "keygenme.py," using a text editor or IDE. We can see that three python libraries have been imported.
+1. Open the provided Python script, "keygenme.py," using a text editor or IDE. We can see that three python libraries have been imported.<br>
 
 <center>
 
