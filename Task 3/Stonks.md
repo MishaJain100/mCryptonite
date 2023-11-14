@@ -57,7 +57,7 @@ The "Stonks" challenge in PicoCTF requires participants to exploit a binary exec
 
 </center><br>
 
-4. Copying the given string of hexadecimal characters into an online converter.<br>
+5. Copying the given string of hexadecimal characters into an online converter.<br>
 
 <center>
 
@@ -65,7 +65,7 @@ The "Stonks" challenge in PicoCTF requires participants to exploit a binary exec
 
 </center><br>
 
-5. Cleaning up the hexadecimal string.<br>
+6. Cleaning up the hexadecimal string.<br>
 
 <center>
 
@@ -73,7 +73,7 @@ The "Stonks" challenge in PicoCTF requires participants to exploit a binary exec
 
 </center><br>
 
-5. Swapping endianness.<br>
+7. Swapping endianness.<br>
 
 <center>
 
