@@ -1,9 +1,9 @@
 <font size = '4'>
-<center>
+<p align = 'center'>
 <b>
 PicoCTF - Stonks Writeup 
 </b>
-</center>
+</p>
 </font>
 
 <br>
@@ -27,59 +27,59 @@ The "Stonks" challenge in PicoCTF requires participants to exploit a binary exec
 <b>Exploitation:</b><br>
 1. Begin by running the binary to understand its behavior. Check if there are any obvious vulnerabilities. In this case, I checked for the string buffer overflow vulnerability.
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Basic_Vulnerabilities.png>)
 
-</center><br>
+</p><br>
 
 2. Open the code in VSCode Text Editor to analyze for any vulnerabilities. Here, we find the potential vulnerability while entering the API token.
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - API_Vulnerability.png>)
 
-</center><br>
+</p><br>
 
 3. To check the data type of the user_buf pointer, we can enter "%p" as the API token. This shows the data type is a hexadecimal.
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Mod_p.png>)
 
-</center><br>
+</p><br>
 
 4. We can enter a string of "%x" to find the API token of the creator.<br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Mod_x.png>)
 
-</center><br>
+</p><br>
 
 5. Copying the given string of hexadecimal characters into an online converter.<br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Online_Converter.png>)
 
-</center><br>
+</p><br>
 
 6. Cleaning up the hexadecimal string.<br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Cleaned_Up_String.png>)
 
-</center><br>
+</p><br>
 
 7. Swapping endianness.<br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/Stonks - Swapping_Endianness.png>)
 
-</center><br>
+</p><br>
 
 <b>Conclusion:</b><br>
 The "Stonks" challenge in PicoCTF introduces participants to binary exploitation. By identifying and exploiting vulnerabilities in the binary executable, participants can gain insights into the fundamentals of software security.

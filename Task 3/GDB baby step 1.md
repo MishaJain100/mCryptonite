@@ -1,9 +1,9 @@
 <font size = '4'>
-<center>
+<p align = 'center'>
 <b>
 PicoCTF - GDB baby step 1 Writeup 
 </b>
-</center>
+</p>
 </font>
 
 <br>
@@ -26,19 +26,19 @@ In the "Baby Steps 1" challenge, we are provided with a binary executable file. 
 <b>Exploitation:</b><br>
 1. Open your terminal and navigate to the directory containing the "debugger0_a" file.
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/GDB - Download.png>)
 
-</center><br>
+</p><br>
 
 2. Check the file type. This shows us its an Executable and Linkable Format file. It also shows that its a 64-bit executable and that its not stripped.
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/GDB - File_Type.png>)
 
-</center><br>
+</p><br>
 
 - ELF File:<br> An ELF file is a common file format used for executables, object code, shared libraries, and even core dumps on Unix and Unix-like systems, including Linux. ELF is a binary format that defines the structure and organization of executable files and their associated data, such as symbols and sections.
 
@@ -48,32 +48,32 @@ In the "Baby Steps 1" challenge, we are provided with a binary executable file. 
 
 3. Start GDB by running the following command.<br>
 
-<center>gdb debugger0_a</center><br>
+<p align = 'center'>gdb debugger0_a</p><br>
 
 4. Then, since we need to locate the main function, lets list all the functions.<br>
 
-<center>info functions</center><br>
+<p align = 'center'>info functions</p><br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/GDB - GDB_Start.png>)
 
-</center><br>
+</p><br>
 
 4. The syntax for GDB is set to AT&T by default. To use Intel syntax, type the following command.<br>
-<center>set disassembly-flavor intel</center><br>
+<p align = 'center'>set disassembly-flavor intel</p><br>
 
-5. To disassemble the assembly code of the main function in this file, we use the following command.<br><center>disassemble main</center><br>
+5. To disassemble the assembly code of the main function in this file, we use the following command.<br><p align = 'center'>disassemble main</p><br>
 
 We need to search for the contents of the "eax" register. The contents are in hexadecimal ("0x86342").<br>
 
-<center>
+<p align = 'center'>
 
 ![](<Pictures/GDB - Disassemble.png>)
 
-</center><br>
+</p><br>
 
-5. Using python, we can easily convert the hexadecimal number to decimals.<br> <center>print(int(0x84342))</center><br>
+5. Using python, we can easily convert the hexadecimal number to decimals.<br> <p align = 'center'>print(int(0x84342))</p><br>
 We get the number 549698 as decimal. Hence, the pico flag is picoCTF{549698}.
 
 <b>Conclusion:</b><br>
