@@ -23,7 +23,7 @@ This writeup provides a step-by-step guide for solving the "basic-mod1" challeng
 The challenge provides a message that needs to be decrypted using a specific scheme. Each number in the message should be taken modulo 37 and mapped to a character set, where 0-25 corresponds to the alphabet (uppercase), 26-35 corresponds to decimal digits, and 36 corresponds to an underscore.
 
 <b>Exploitation:</b><br>
-This can be solved using the following python code.
+This can be solved using the following python code. The flag is picoCTF{r0und_n_r0und_79c18fb3}.
 
 <p align = 'center'>
 
