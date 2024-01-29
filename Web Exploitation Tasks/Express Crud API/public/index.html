@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express API</title>
+</head>
+<body>
+
+  <h1>Express API Test</h1>
+
+  <div>
+    <h2>GET All Books</h2>
+    <button onclick="getAllBooks()">Get All Books</button>
+    <p id="getAllBooksResult"></p>
+  </div>
+
+  <div>
+    <h2>SEARCH Book by title / author</h2>
+    <label for="getBookByQuery">Query:</label>
+    <input type="text" id="getBookByQuery" placeholder="Enter Search Query">
+    <button onclick="getBookByQuery()">Search Books</button>
+    <p id="getBookByQueryResultTitle"></p>
+    <p id="getBookByQueryResult"></p>
+  </div>
+
+  <div>
+    <h2>POST New Book</h2>
+    <label for="postTitle">Title:</label>
+    <input type="text" id="postTitle" placeholder="Enter Title">
+    <label for="postAuthor">Author:</label>
+    <input type="text" id="postAuthor" placeholder="Enter Author">
+    <button onclick="postNewBook()">Add New Book</button>
+    <p id="postNewBookResult"></p>
+  </div>
+
+  <div>
+    <h2>PUT Update Book by ID</h2>
+    <label for="putBookIdInput">Book ID:</label>
+    <input type="text" id="putBookIdInput" placeholder="Enter Book ID">
+    <label for="putTitle">Title:</label>
+    <input type="text" id="putTitle" placeholder="Enter New Title">
+    <label for="putAuthor">Author:</label>
+    <input type="text" id="putAuthor" placeholder="Enter New Author">
+    <button onclick="putUpdateBook()">Update Book by ID</button>
+    <p id="putUpdateBookResult"></p>
+  </div>
+
+  <div>
+    <h2>DELETE Book by ID</h2>
+    <label for="deleteBookIdInput">Book ID:</label>
+    <input type="text" id="deleteBookIdInput" placeholder="Enter Book ID">
+    <button onclick="deleteBookById()">Delete Book by ID</button>
+    <p id="deleteBookByIdResult"></p>
+  </div>
+
+  <script>
+    async function getAllBooks() {
+      const response = await fetch('/books');
+      const data = await response.json();
+
+      var result = "";
+      for (var i = 0; i < data.length; i++) {
+          //console.log(data[i]);
+          result += data[i].id + ". " + data[i].title + " - " + data[i].author + `<br>`; 
+      }
+
+      document.getElementById('getAllBooksResult').innerHTML = result;
+    }
+
+    async function getBookByQuery() {
+      console.log('Works');
+      const searchQuery = document.getElementById('getBookByQuery').value;
+      const response = await fetch('/books/search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ "q": searchQuery}),
+      });
+      const data = await response.json();
+  
+      const resultHTML = `Your search for ${searchQuery} returned ${data.length} results`;
+      document.getElementById('getBookByQueryResultTitle').innerText = resultHTML;
+      var result = "";
+      for (var i = 0; i < data.length; i++) {
+          //console.log(data[i]);
+          result += data[i].title + " - " + data[i].author + `<br>`; 
+      }
+
+      document.getElementById('getBookByQueryResult').innerHTML = result;
+    }
+
+    async function postNewBook() {
+      const title = document.getElementById('postTitle').value;
+      const author = document.getElementById('postAuthor').value;
+
+      const response = await fetch('/books', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, author }),
+      });
+
+      const data = await response.text();
+      console.log(data);
+      document.getElementById('postNewBookResult').innerText = data;
+    }
+
+    async function putUpdateBook() {
+      const bookId = document.getElementById('putBookIdInput').value;
+      const title = document.getElementById('putTitle').value;
+      const author = document.getElementById('putAuthor').value;
+
+      const response = await fetch(`/books/${bookId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, author }),
+      });
+
+      const data = await response.text();
+      document.getElementById('putUpdateBookResult').innerText = data;
+    }
+
+    async function deleteBookById() {
+      const bookId = document.getElementById('deleteBookIdInput').value;
+      const response = await fetch(`/books/${bookId}`, {
+        method: 'DELETE',
+      });
+
+      const data = await response.text();
+      document.getElementById('deleteBookByIdResult').innerText = data;
+    }
+  </script>
+
+</body>
+</html>
